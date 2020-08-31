@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "685495697800",
+    "firebase_url": "https://grca-d8541.firebaseio.com",
+    "project_id": "grca-d8541",
+    "storage_bucket": "grca-d8541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685495697800:android:83a4389f319507f767fa3d",
+        "android_client_info": {
+          "package_name": "grgurjukic.firebaseflutteraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685495697800-p68fbfg3kshdm0mm1fo84fkoev3915cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr5E-fvyAsJB-WZ4Cpj5fmbmZrVdHFs0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685495697800-p68fbfg3kshdm0mm1fo84fkoev3915cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
