@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebaseflutterapp/models/player_model.dart';
-import 'package:firebaseflutterapp/models/hotel_model.dart';
+import 'package:firebaseflutterapp/models/team_model.dart';
 
 
 class PlayerCarousel extends StatelessWidget {

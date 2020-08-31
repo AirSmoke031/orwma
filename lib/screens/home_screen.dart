@@ -2,7 +2,7 @@ import 'package:firebaseflutterapp/screens/chewie_list_item.dart';
 import 'package:firebaseflutterapp/widgets/player_carousel.dart';
 import 'package:flutter/material.dart';
 import 'package:firebaseflutterapp/widgets/destination_carousel.dart';
-import 'package:firebaseflutterapp/widgets/hotel_carousel.dart';
+import 'package:firebaseflutterapp/widgets/team_carousel.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 

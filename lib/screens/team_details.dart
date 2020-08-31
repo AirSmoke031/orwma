@@ -1,4 +1,4 @@
-import 'package:firebaseflutterapp/models/hotel_model.dart';
+import 'package:firebaseflutterapp/models/team_model.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
@@ -20,17 +20,17 @@ class DetailPage extends StatelessWidget {
                     title: Text('Team Details'),
                     expandedHeight: 305.0,
                     flexibleSpace: FlexibleSpaceBar(
-                      title: Text('${hotels[index].name}'),
+                      title: Text('${Teams[index].name}'),
                       background: Image(
                         fit: BoxFit.cover,
-                        image: AssetImage('${hotels[index].imageUrl}'),),
+                        image: AssetImage('${Teams[index].imageUrl}'),),
                     ),
                   ),
                  SliverFixedExtentList(
                    itemExtent: 20.00,
                    delegate: SliverChildListDelegate([
                         Text(
-                           'TEAM NAME : ${hotels[index].name}',
+                           'TEAM NAME : ${Teams[index].name}',
                             style: TextStyle(
                               fontSize: 15.0,
                               fontWeight: FontWeight.w600,
@@ -39,7 +39,7 @@ class DetailPage extends StatelessWidget {
                            ),
                        SizedBox(height: 10.0),
                        Text(
-                         'TEAM LOCATION : ${hotels[index].address}',
+                         'TEAM LOCATION : ${Teams[index].address}',
                          style: TextStyle(
                             fontSize: 15.0,
                             fontWeight: FontWeight.w600,
@@ -48,7 +48,7 @@ class DetailPage extends StatelessWidget {
                      ),
                        SizedBox(height: 10.0),
                        Text(
-                         'TEAM PRIZE WINNINGS : ${hotels[index].price}',
+                         'TEAM PRIZE WINNINGS : ${Teams[index].price}',
                           style: TextStyle(
                             fontSize: 15.0,
                             fontWeight: FontWeight.w600,
@@ -57,7 +57,7 @@ class DetailPage extends StatelessWidget {
                      ),
                        SizedBox(height: 10.0),
                        Text(
-                         'TEAM REGION : ${hotels[index].region}',
+                         'TEAM REGION : ${Teams[index].region}',
                          style: TextStyle(
                             fontSize: 15.0,
                             fontWeight: FontWeight.w600,
@@ -66,7 +66,7 @@ class DetailPage extends StatelessWidget {
                      ),
                       SizedBox(height: 10.0),
                       Text(
-                         'LINEUP : ${hotels[index].lineup}',
+                         'LINEUP : ${Teams[index].lineup}',
                          style: TextStyle(
                             fontSize: 15.0,
                             fontWeight: FontWeight.w600,
@@ -81,7 +81,7 @@ class DetailPage extends StatelessWidget {
                           children : <Widget> [
                             Flexible(
                               child: Text(
-                               'TEAM SPONSORS : ${hotels[index].sponsors}',
+                               'TEAM SPONSORS : ${Teams[index].sponsors}',
                                 overflow: TextOverflow.visible,
                                 style: TextStyle(
                                   fontSize: 15.0,

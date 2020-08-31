@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:firebaseflutterapp/models/hotel_model.dart';
+import 'package:firebaseflutterapp/models/team_model.dart';
 
 class HotelCarousel extends StatelessWidget {
   @override
@@ -38,9 +38,9 @@ class HotelCarousel extends StatelessWidget {
           height: 520.0,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: hotels.length,
+            itemCount: Teams.length,
             itemBuilder: (BuildContext context, int index) {
-              Hotel hotel = hotels[index];
+              Team team = Teams[index];
               return Container(
                 margin: EdgeInsets.all(10.0),
                 height: 400.0,
@@ -63,7 +63,7 @@ class HotelCarousel extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
                               Text(
-                                'Team Name:\ ${hotel.name}',
+                                'Team Name:\ ${team.name}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class HotelCarousel extends StatelessWidget {
                               ),
                               SizedBox(height: 10.0),
                               Text(
-                                'Location:\ ${hotel.address}',
+                                'Location:\ ${team.address}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
@@ -81,7 +81,7 @@ class HotelCarousel extends StatelessWidget {
                               ),
                               SizedBox(height: 10.0),
                               Text(
-                                'Team Earnings: \ ${hotel.price}',
+                                'Team Earnings: \ ${team.price}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
@@ -90,7 +90,7 @@ class HotelCarousel extends StatelessWidget {
                               ),
                               SizedBox(height: 10.0),
                               Text(
-                                'Region:\ ${hotel.region}',
+                                'Region:\ ${team.region}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
@@ -99,7 +99,7 @@ class HotelCarousel extends StatelessWidget {
                               ),
                               SizedBox(height: 10.0),
                               Text(
-                                'Lineup:\ ${hotel.lineup}',
+                                'Lineup:\ ${team.lineup}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600,
@@ -129,7 +129,7 @@ class HotelCarousel extends StatelessWidget {
                         child: Image(
                           height: 280.0,
                           width: 350.0,
-                          image: AssetImage(hotel.imageUrl),
+                          image: AssetImage(team.imageUrl),
                           fit: BoxFit.cover,
                         ),
                       ),
